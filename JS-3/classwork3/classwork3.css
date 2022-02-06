@@ -1,0 +1,80 @@
+/*<!--template 2.1-->*/
+/*<!--template 2.2-->*/
+
+/** {*/
+/*    margin: 5px;*/
+/*    padding: 0;*/
+/*    background-color: #f8ebd7;*/
+/*}*/
+
+/*li {*/
+/*    list-style: none;*/
+/*}*/
+
+/*.card {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*}*/
+/*.name_surname h2 {*/
+/*    font-size: 30px;*/
+/*}*/
+
+/*.info p {*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.photo img {*/
+/*    max-width: 200px;*/
+/*}*/
+
+
+/*!*<!--        template 3.1-->*!*/
+
+/** {*/
+/*    margin: 5px;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.product_card {*/
+/*    max-width: 300px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.product_image img {*/
+/*    max-width: 250px;*/
+/*}*/
+
+/*.product_title, .product_image img {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    text-align: center;*/
+/*}*/
+/*.product_title {*/
+/*    font-size: 25px;*/
+/*    font-weight: bold;*/
+/*    color: #25a4ff;*/
+/*}*/
+
+/*.product_title div {*/
+/*    font-size: 15px;*/
+/*}*/
+/*.milk img{*/
+/*    padding-left: 10px;*/
+/*}*/
+
+/*.juice img {*/
+/*    padding-left: 15px;*/
+/*}*/
+
+/*.tomato img {*/
+/*    padding-left: 50px;*/
+/*}*/
+
+/*.tea img {*/
+/*    padding-left: 13px;*/
+/*}*/
