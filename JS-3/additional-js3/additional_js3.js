@@ -5,20 +5,25 @@
 // d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
 
 // a
-// let numb = [];
-// for (let i = 1; i < 102; i++) {
+// let numbs = [];
+//
+// for (let i = 0; i < 100; i++) {
 //     if (i % 2 === 0) {
-//         console.log(i)
+//         numbs.push(i);
 //     }
 // }
+// console.log(numbs);
+//
 
 // b
-// let numb = [];
+// let numbs = [];
+//
 // for (let i = 0; i < 100; i++) {
 //     if (i % 2 === 1) {
-//         console.log(i)
+//         numbs.push(i);
 //     }
 // }
+// console.log(numbs);
 
 // c
 // let numb = [];
@@ -68,38 +73,49 @@
 // 5. Вивести кожен елемент масиву, сусід справа якого є парним
 // EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
 
-// let numb = [1, 2, 3, 5, 7, 9, 56, 8, 67];
-// for (let i = 0; i < numb.length; i++) {
-//         console.log(`${numb[0]} ${numb[5]} ${numb[6]}`)
+// let numbers = [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ];
+//
+// for (let i = 0; i < numbers.length; i++){
+//     if (numbers[i + 1] % 2 === 0){
+//         console.log(numbers[i]);
+//     }
 // }
 
 // 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
 
 // let array = [100, 250, 50, 168, 120, 345, 188];
-// let arrays = (100 + 250 + 50 + 168 + 120 + 345 + 188);
-// let receipt = 7;
-// let sum = (arrays / receipt);
-// console.log(sum);
+// let receipt = [];
+// for (let i = 0; i < array.length; i++) {
+//     receipt = array[0]+array[1]+array[2]+array[3]+array[4]+array[5]+array[6];
+//     let sum = receipt / 7;
+//     console.log(sum);
+// }
 
-// let array = [100 + 250 + 50 + 168 + 120 + 345 + 188];
-// let receipt = 7;
-// let sum = (array / receipt);
-// console.log(sum);
+// let arrays = [100,250,50,168,120,345,188];
+//
+// for (let i = 0; i < arrays.length; i++) {
+//     let count = arrays[0] + arrays[1] + arrays[2] + arrays[3] + arrays[4] + arrays[5] + arrays[6];
+//     let sum = (count / arrays.length)
+//     console.log(sum);
+// }
 
 // 7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
 
 // let numbs = [8, "9", 60, 3, "10"];
-// let element = 5;
-// let numb = [`${numbs[0] * element} ${numbs[1] * element} ${numbs[2] * element} ${numbs[3] * element} ${numbs[4] * element}`];
-// console.log(numb);
+// let element = [];
+// for (let i = 0; i < numbs.length; i++) {
+//     element[i] = numbs[i] * 5;
+//     console.log(element[i]);
+// }
 
 // 8. Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо елемент є числом - додати його в інший масив.
 
 // let arrays = ['name', false, 19, 0, 'surname']
+// let array = [];
 // for (let i = 0; i < arrays.length; i++){
-//     let array = arrays[i];
+//
 //     if (typeof arrays[i] === 'number') {
-//         console.log(array)
+//         array[i] = arrays[i];
 //     }
 // }
 
@@ -174,21 +190,20 @@
 //     document.write(`<li>${usersWithCitie.name} - ${usersWithCitie.age}, from ${usersWithCitie.address.country}, ${usersWithCitie.address.city}</li>`)
 //     console.log(`${usersWithCitie.name} - ${usersWithCitie.age}, from ${usersWithCitie.address.country}, ${usersWithCitie.address.city}`)
 // }
-// document.write(`</ol>`)
+// document.write(`</ol>`);
 
 // - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
 
 // let arrays = [5, 12, 95, 66, 20, 1, 9, 78, 3, 10];
-//
+// let array = [];
 // let i = 0;
 // while (i < arrays.length){
-//     let array = arrays[i];
-//     if (array % 2 === 0) {
-//         console.log(arrays[i])
+//     array[i] = arrays[i];
+//     if (array[i] % 2 === 0) {
+//         console.log(array[i]);
 //     }
 //     i++;
 // }
-
 
 // - Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
 
@@ -196,25 +211,28 @@
 // let array = [];
 // let i = 0;
 // while (i < arrays.length) {
-//     let array = arrays[i];{
-//         console.log(array)
-//     }
+//     array[i] = arrays[i];
+//         console.log(array[i])
 //     i++;
 // }
 
-// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
-
+// // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+//
 // let array = ['a', 'b', 'c'];
+// let arrays = [];
 // for (let i = 0; i < array.length; i++) {
-//     console.log(`${array[0]}${array[1]}${array[2]}`)
+//     arrays = array[0] + array[1] + array[2];
+//     console.log(arrays);
 // }
 
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
 
-// let arrays = ['a', 'b', 'c'];
+// let array = ['a', 'b', 'c'];
+// let arrays = [];
 // let i = 0;
-// while (i < arrays.length) {
-//     console.log(`${arrays[0]}${arrays[1]}${arrays[2]}`)
+// while (i < array.length) {
+//     arrays = (`${array[0]}${array[1]}${array[2]}`)
+//     console.log(arrays);
 //     i++;
 // }
 
